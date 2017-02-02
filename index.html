@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+	
 	<head>
 		<link href="reset.css" rel="stylesheet" type="text/css">
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<meta charset="utf-8">
 		<title>build this webpage - Google Search</title>
 	</head>
+	
 	<body>
-		<nav class="top-nav">
-			
+		<nav id="top-nav">
+			<img src="images/google_logo.jpg">
+			<input class="search-input" type="text" value="build this webpage">
 			<div id="sign-in">
 				<a href="#">Gmail</a>
 	            <a href="#">Images</a>
-	            <button class="sign-in" type="button"><strong>Sign In</strong></button>
+	            <button type="button"><strong>Sign In</strong></button>
 			</div>	
+
 			<div id="search-categories">
 				<ul>
-					<li>All</li>
-					<li>Videos</li>
-					<li>News</li>
-					<li>Shopping</li>
-					<li>Maps</li>
-					<li>More</li>
+					<li><a href="#">All</a></li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Shopping</a></li>
+					<li><a href="#">Maps</a></li>
+					<li><a href="#">More</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Tools</a></li>
 				</ul>
-
-				<ul>
-					<li>Settings</li>
-					<li>Tools</li>
-				</ul>
+					
 			</div>
 		</nav>
-
-		<p>About 3,480,000 results (0.63 seconds)</p>
+		
+		<div class="container">
+		<p class="results">About 3,480,000 results (0.63 seconds)</p>
 
 		<article>
 			<header>
 				<h2 class="search-link"><a href="#">With zero coding experience, artist building 180 webpages in 180 days</a></h2>
 				<p class="website-link">arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-in-180...</p>
 			</header>
-			<p>Jul 26, 2013 - The next day, she built another, and she has kept building one new webpage every single day. Instead of beginning with "Hello World," a class, ...</p>
+			<p>Jul 26, 2013 - The next day, she built another, and she has kept <strong>building</strong> one new <strong>webpage</strong> every single day. Instead of beginning with "Hello World," a class, ...</p>
 		</article>
 
 		<article>
@@ -60,9 +63,9 @@
 		<article>
 			<header>
 				<h2 class="search-link"><a href="#">I'm learning to code by building 180 websites in 180 ... - Jennifer Dewalt</a></h2>
-				<p>blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in</p>
+				<p class="website-link">blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in</p>
 			</header>
-			<p class="website-link">Jul 24, 2013 - Build a different website every day for 180 consecutive days. Every website must be accompanied by a blog post. Any code I write must be ...</p>
+			<p>Jul 24, 2013 - Build a different website every day for 180 consecutive days. Every website must be accompanied by a blog post. Any code I write must be ...</p>
 		</article>
 
 		<article>
@@ -81,22 +84,25 @@
 			<p>Apr 1, 2015 - This website tries to find thematically similar movies based on online reviews. Each movie is accompanied by the quotes which prompted the ...</p>
 		</article>
 
+		<aside class="related-results">
 		<h3>Searches related to build this webpage</h3>
 
-			<ul>
-				<li>180 websites in 180 days challenge</li>
-				<li>jennifer dewalt linkedin</li>
-				<li>yumhacker</li>
-				<li>180 news website</li>
+			<ul class="left-links">
+				<li><a href="#">180 websites in 180 days challenge</a></li>
+				<li><a href="#">jennifer dewalt linkedin</a></li>
+				<li><a href="#">yumhacker</a></li>
+				<li><a href="#">180 news website</a></li>
 			</ul>
 
-			<ul>
-				<li>squarespace</li>
-				<li>wordpress</li>
-				<li>godaddy</li>
-				<li>codepen</li>
+			<ul class="right-links">
+				<li><a href="#">squarespace</a></li>
+				<li><a href="#">wordpress</a></li>
+				<li><a href="#">godaddy</a></li>
+				<li><a href="#">codepen</a></li>
 			</ul>
-
+		</aside>
+	</div>
+		
 		<footer>
 			<p>11201, New York, NY - Reported by this computer</p>
 
@@ -107,6 +113,7 @@
 				<li>Terms</li>
 			</ul>
 		</footer>
+
 
 	</body>
 </html>
